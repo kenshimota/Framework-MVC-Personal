@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Errors de Pagina</title>
+</head>
+<body>
+	<div>
+		<?php $errors = Report::getErrors(); ?>
+		<?php  for ($i=0; $i < count($errors) ; $i++) {?>
+			<label>Error (<?php echo $i + 1 ?>): </labe><?php echo $errors[$i]; ?>
+		<?php }  ?>
+	</div>
+</body>
+</html>
